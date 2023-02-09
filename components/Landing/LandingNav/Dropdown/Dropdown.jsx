@@ -20,11 +20,13 @@ export default function Dropdown({ isOpen, setIsOpen }) {
   return (
     <div
       id="dropdown"
+      onMouseLeave={() => setIsOpen(false)}
       className={
         isOpen
-          ? 'z-10 absolute -right-5 top-11 bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700'
+          ? 'z-10 absolute -right-5 top-12 bg-white rounded-lg shadow w-44 dark:bg-gray-700'
           : 'hidden'
       }>
+      <div className="absolute w-3 h-3 bg-white dark:bg-gray-700 transform rotate-45 -top-1.5 right-[1.85rem]" />
       <ul
         className="py-2 text-sm text-gray-700 dark:text-gray-200"
         aria-labelledby="dropdownDefaultButton">
