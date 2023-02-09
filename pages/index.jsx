@@ -1,9 +1,7 @@
-import LandingHero from 'components/Landing/LandingHero';
-import LandingNav from 'components/Landing/LandingNav';
+import LandingPage from 'components/Landing/LandingPage';
 import withAuth from 'hoc/withAuth';
-import { useSession } from 'next-auth/react';
 import Head from 'next/head';
-import React, { useContext } from 'react';
+import React from 'react';
 
 function Home({}) {
   return (
@@ -14,10 +12,7 @@ function Home({}) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
-        <LandingNav />
-        <LandingHero />
-      </main>
+      <LandingPage />
     </div>
   );
 }
