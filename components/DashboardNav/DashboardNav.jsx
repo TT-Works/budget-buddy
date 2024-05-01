@@ -5,6 +5,8 @@ import Link from 'next/link';
 
 export default function DashboardNav() {
   const [isOpen, setIsOpen] = useState(false);
+  const currentMonth = new Date().toLocaleString('default', { month: 'long' });
+  const currentYear = new Date().getFullYear();
 
   useEffect(() => {
     function onWindowClick(event) {
@@ -63,7 +65,7 @@ export default function DashboardNav() {
           <ul className="space-y-2 ">
             <li>
               <Link
-                href="/dashboard"
+                href={`/dashboard/${currentYear}/${currentMonth}`}
                 className="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
                 <svg
                   aria-hidden="true"
