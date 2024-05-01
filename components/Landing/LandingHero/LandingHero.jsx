@@ -5,6 +5,8 @@ import React from 'react';
 
 export default function LandingHero() {
   const { data: session } = useSession();
+  const currentMonth = new Date().toLocaleString('default', { month: 'long' });
+  const currentYear = new Date().getFullYear();
 
   return (
     <section className="bg-white dark:bg-gray-900">
@@ -24,7 +26,7 @@ export default function LandingHero() {
           {/* TODO: Make this link to Plan selections */}
           {session ? (
             <Link
-              href="/dashboard"
+              href={`/dashboard/${currentYear}/${currentMonth}`}
               className="max-lg:mx-auto inline-flex items-center justify-center px-5 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-primary-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
               To your dashboard
               <svg

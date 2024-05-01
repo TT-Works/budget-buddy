@@ -1,5 +1,6 @@
 import React from 'react';
 
+//TODO: Delete this if using next-auth
 export const UserContext = React.createContext(null);
 
 export const UserProvider = ({ children }) => {

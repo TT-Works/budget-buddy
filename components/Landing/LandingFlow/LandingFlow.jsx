@@ -20,8 +20,8 @@ const LandingFlow = () => {
           <div className="ml-0 md:mx-6 lg:w-2/3">
             <div className="container mx-auto w-full h-full">
               <div className="relative wrap overflow-hidden p-10 h-full">
-                <div className="border-2-2 absolute h-full border right-1/2 border-primary-700 rounded-[1%]"></div>
-                <div className="border-2-2 absolute h-full border left-1/2 border-primary-700 rounded-[1%]"></div>
+                <div className="border-2-2 absolute h-full border right-1/2 border-primary-500 dark:border-primary-700 rounded-[1%]"></div>
+                <div className="border-2-2 absolute h-full border left-1/2 border-primary-500 dark:border-primary-700 rounded-[1%]"></div>
                 <div className="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
                   <div className="order-1 w-5/12"></div>
                   <div className="order-1 w-5/12 px-1 py-4 text-right">
@@ -70,7 +70,7 @@ const LandingFlow = () => {
                   <div className="order-1  w-5/12 px-1 py-4">
                     <p className="mb-3 text-base text-primary-500">Optional</p>
                     <h4 className="mb-3 font-bold  text-lg md:text-2xl text-left dark:text-white">
-                      Add a person
+                      Add a buddy
                     </h4>
                     <p className="text-sm md:text-base leading-snug text-gray-500 dark:text-gray-300 text-opacity-100">
                       You can use Budget Buddy with your friends and family. All

@@ -7,12 +7,14 @@ import GoogleButton from 'components/GoogleButton';
 export default function Login() {
   const router = useRouter();
   const { data: session } = useSession();
+  const currentMonth = new Date().toLocaleString('default', { month: 'long' });
+  const currentYear = new Date().getFullYear();
 
   useEffect(() => {
     if (session) {
-      router.push('/dashboard');
+      router.push(`/dashboard/${currentYear}/${currentMonth}`);
     }
-  }, [router, session]);
+  }, [currentMonth, currentYear, router, session]);
 
   return (
     <section className="bg-gray-50 dark:bg-gray-900 min-h-screen">

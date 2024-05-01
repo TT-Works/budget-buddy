@@ -8,7 +8,7 @@ Chart.register(...registerables);
 const options = {
   plugins: {
     legend: {
-      position: 'bottom',
+      position: 'right',
       labels: {
         boxWidth: 10,
       },

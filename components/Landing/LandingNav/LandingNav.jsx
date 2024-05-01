@@ -52,8 +52,3 @@ export default function LandingNav() {
     </header>
   );
 }
-
-// Create a tooltip triangle
-const meow = (
-  <div className="absolute w-3 h-3 bg-white transform rotate-45 -top-1.5 -left-1.5" />
-);
